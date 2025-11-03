@@ -1,0 +1,359 @@
+
+/* === General Page Setup === */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f7f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Header Section === */
+header {
+    background-image: url("qingdao.jpg");
+    background-size: cover;        
+    background-position: center;    
+    color: #fdf904;                
+    text-align: center;
+    padding: 40px 0;                 
+    border-bottom: 2px solid #c5cae9;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fdf904;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* === Section Titles === */
+h2 {
+    color: #37474f;
+    border-left: 4px solid #5c6bc0;
+    padding-left: 8px;
+    margin-top: 40px;
+}
+
+/* === General Page Setup === */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f5f5;  /* 深色背景 */
+    color: #0f0e0e;             /* 浅灰色文字 */
+    margin: 0;
+    padding: 0;
+}
+
+/* === About Section Enhanced === */
+#about {
+    background-image: url("b86406d7-5caf-4eb0-9f21-b56b8e9482e0.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.about-container {
+    display: flex;                /* 横向排列头像+简介 */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(255,255,255,0.85);  /* 轻微透明层，让文字更清晰 */
+    border-radius: 12px;
+    padding: 40px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* === About Section Enhanced === */
+#about {
+    background-image: url("b86406d7-5caf-4eb0-9f21-b56b8e9482e0.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.about-container {
+    display: flex;                /* 横向排列头像+简介 */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(255,255,255,0.85);  /* 轻微透明层，让文字更清晰 */
+    border-radius: 12px;
+    padding: 40px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* 左侧头像区 */
+.about-left {
+    text-align: center;
+    flex: 1;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #c5cae9;
+    margin-bottom: 15px;
+}
+
+.about-left h2 {
+    margin: 5px 0 0 0;
+    color: #2e3a59;
+}
+
+.about-left h4 {
+    margin: 5px 0;
+    color: #444;
+}
+
+.about-left p {
+    font-size: 15px;
+    color: #333;
+}
+
+/* 右侧文字介绍区 */
+.about-right {
+    flex: 3;
+    text-align: justify;
+    line-height: 1.5;        /* 增大行间距 */
+    color: #080408;
+    font-size: 18px;         /* 增大文字字号 */
+    padding-right: 30px;     /* 加点右边距 */
+}
+
+/* === 强制 Education 部分样式（调中、放大字体、右侧背景图）=== */
+#education {
+    position: relative !important;
+    background-color: #f5f5f5 !important;
+    color: #222 !important;
+    padding: 60px 100px !important;
+    overflow: hidden !important;
+}
+
+/* 右侧背景图 */
+#education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url("xingyue_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    opacity: 0.5; /* 稍微淡化 */
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 65%, rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 65%, rgba(0,0,0,0));
+    z-index: 1;
+}
+
+/* === Education & Interests Section - 两栏在左，右侧留白 === */
+.edu-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 60px;
+  width: 55%;
+  position: relative;
+  z-index: 2;
+  padding-left: 40px;
+}
+
+/* 左右内容区 */
+.edu-left, .edu-right {
+  width: 48%;
+  line-height: 1.9;       /* ✅ 行距略放大，更易读 */
+  font-size: 20px;        /* ✅ 字号从18px → 20px */
+}
+
+/* 小标题（Research Interests / Education） */
+#education h3 {
+  color: #2e3a59;
+  font-size: 25px;        /* ✅ 比正文更突出 */
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* 主标题保持一致 */
+#education h2 {
+  color: #2e3a59;
+  border-left: 4px solid #5c6bc0;
+  padding-left: 8px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+/* === Global styling for sections after Education === */
+/* 让 Research / Publications / Internships / Contact 四部分对齐 + 字体变大 */
+#research,
+#publications,
+#internships,
+#contact {
+  padding: 40px 140px;     /* 与 Education 对齐 */
+  font-size: 20px;         /* 字体放大 */
+  line-height: 1.8;        /* 更舒适的阅读间距 */
+  color: #222;             /* 保持统一文本颜色 */
+}
+
+/* 标题样式，与 Education 一致 */
+#research h2,
+#publications h2,
+#internships h2,
+#contact h2 {
+  color: #2e3a59;
+  border-left: 4px solid #5c6bc0;
+  padding-left: 8px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* 小标题 h3 统一视觉风格 */
+#research h3,
+#publications h3,
+#internships h3,
+#contact h3 {
+  font-size: 22px;
+  color: #2e3a59;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* 调整列表（ul / li）间距 */
+#research ul,
+#publications ul,
+#internships ul,
+#contact ul {
+  padding-left: 25px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* === 表格样式优化 === */
+#internships table,
+#contact table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+#internships th, 
+#internships td,
+#contact th,
+#contact td {
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* 表头高亮一点，更整齐 */
+#internships th,
+#contact th {
+  background-color: #eef0f8;
+  color: #2e3a59;
+  font-weight: bold;
+}
+
+/* === Hobbies Section: Align with Other Sections === */
+#hobbies {
+  background-color: #f5f5f5;
+  padding: 40px 140px;      /* ✅ 与 Education / Research 完全对齐 */
+  text-align: left;         /* ✅ 标题与正文左对齐，更统一 */
+  font-size: 20px;          /* ✅ 字号与前面保持一致 */
+  line-height: 1.8;         /* ✅ 行距一致 */
+  color: #222;
+}
+
+/* 小标题与段落保持一致风格 */
+#hobbies h2 {
+  color: #2e3a59;
+  border-left: 4px solid #5c6bc0;
+  padding-left: 8px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+#hobbies h5 {
+  font-size: 22px;
+  color: #2e3a59;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#hobbies p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #333;
+}
+
+#hobbies img {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* === Web Form Section === */
+#guestbook {
+  padding: 40px 140px;
+  background-color: #f7f8fa;
+  color: #222;
+}
+
+#guestbook h2 {
+  color: #2e3a59;
+  border-left: 4px solid #5c6bc0;
+  padding-left: 8px;
+  margin-bottom: 20px;
+}
+
+#guestbook input[type="text"],
+#guestbook textarea {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#guestbook input[type="button"] {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#guestbook input[type="button"]:hover {
+  background-color: #3f51b5;
+}
+
+#messageDisplay {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}

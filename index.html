@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guo Xingyue | Academic Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="billboard.js"></script>
+    <link rel="stylesheet" href="billboard.css">
+</head>
+
+<body>
+    <body onload="setEvent(); initChart();">
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Guo Xingyue</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ===== About Section ===== -->
+        <section id="about">
+            <div class="about-container">
+                <!-- 左侧：头像 + 基本信息 -->
+                <div class="about-left">
+                    <img src="GUO Xingyue_profile.jpg" alt="Guo Xingyue Photo" class="profile-photo">
+                    <h2>Guo Xingyue</h2>
+                    <h4>郭星玥</h4>
+                    <p><em>MSc in E-Commerce and Logistics Technology</em><br>
+                       The Chinese University of Hong Kong (CUHK)</p>
+                </div>
+
+                <!-- 右侧：详细介绍 -->
+                <div class="about-right">
+                    <p>
+                        I am <strong>Guo Xingyue</strong>, a postgraduate student at 
+                        <strong>The Chinese University of Hong Kong (CUHK)</strong>. 
+                        My research focuses on <b>strategic management</b>, 
+                        <b>social network analysis</b>, and <b>algorithmic decision optimization</b>.
+                    </p>
+
+                    <p>
+                        Since 2025, I have been collaborating with Prof. Andy Back 
+                        at The University of Hong Kong on projects exploring 
+                        executive communication and M&A conference calls. 
+                        This collaboration extends beyond the traditional research assistant role — 
+                        we are co-developing manuscripts that investigate 
+                        executive network effects and information diffusion.
+                    </p>
+
+                    <p>
+                        I also assist a PhD candidate in CUHK's supply chain research group as a 
+                        student helper, contributing to data visualization 
+                        and analysis of large-scale trade datasets, integrating 
+                        quantitative methods with management research.
+                    </p>
+
+                    <p>
+                        My earlier undergraduate research at 
+                        China University of Petroleum (East China) covered 
+                        social network analysis, system dynamics, 
+                        and algorithm optimization. 
+                        I developed ERGM/TERGM models, dynamic simulations, 
+                        and optimization algorithms in Python and MATLAB for 
+                        logistics and resource allocation.
+                    </p>
+
+                    <p>
+                        In conclusion, I aim to understand how information, decisions, 
+                        and relationships spread through executive and corporate networks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== Education & Interests Section ===== -->
+        <section id="education">
+            <h2>Education & Interests</h2>
+            <div class="edu-container">
+                <div class="edu-left">
+                    <h3>Research Interests</h3>
+                    <ul>
+                        <li>Strategic Management</li>
+                        <li>Social Network Analysis</li>
+                        <li>Executive Behavior and M&A</li>
+                        <li>Algorithm Optimization</li>
+                        <li>System Dynamics</li>
+                    </ul>
+                </div>
+
+                <div class="edu-right">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>
+                            <strong>The Chinese University of Hong Kong (CUHK)</strong><br>
+                            MSc in E-Commerce and Logistics Technology<br>
+                            <i>Aug 2025 - Present</i>
+                        </li>
+                        <li>
+                            <strong>China University of Petroleum (East China)</strong><br>
+                            Bachelor of Management in Engineering Management<br>
+                            <i>Sept 2021 - Jun 2025</i><br>
+                            GPA: 86.7/100 &nbsp;&nbsp;|&nbsp;&nbsp; Ranking: 14/82
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== Research Section ===== -->
+        <section id="research">
+            <h2>Research Experiences</h2>
+            <h3>Research Collaboration, The University of Hong Kong</h3>
+            <p>
+                Collaborating with <strong>Dr. Andy Back</strong> on projects examining 
+                <b>executive behavior, analyst interpretation, and network imitation</b> in M&A contexts. 
+                Responsibilities include dataset construction, text analysis of conference call transcripts, 
+                and empirical modeling of market and organizational responses.
+            </p>
+
+            <h3>Student Helper, CUHK Supply Chain Research Group</h3>
+            <p>
+                Assisting in data visualization and preprocessing of large trade and logistics datasets. 
+                Experience includes data cleaning, exploratory analytics, and preparing 
+                materials for academic presentation and visualization dashboards.
+            </p>
+
+            <h3>Undergraduate Research Projects</h3>
+            <ul>
+                <li>
+                    <strong>Social Network Analysis:</strong> Built spatial association networks 
+                    using ArcGIS, Ucinet, and Gephi.
+                </li>
+                <li>
+                    <strong>System Dynamics:</strong> Conducted dynamic feedback modeling using Vensim.
+                </li>
+                <li>
+                    <strong>Algorithm Optimization:</strong> Applied operations research techniques 
+                    in Python and MATLAB to optimize logistics and resource allocation.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- ===== Publications Section ===== -->
+        <section id="publications">
+            <h2>Publications & Working Papers</h2>
+            <p><em>Manuscripts in Preparation:</em></p>
+            <ul>
+                <li>
+                    <strong>Study on the Characteristics and Influencing Factors of the Spatial 
+                    Correlation Network of Carbon Emission Efficiency in China's Marine Fisheries</strong><br>
+                    Establishes a spatial network for carbon emissions in marine fisheries and 
+                    investigates its underlying mechanisms, offering policy insights.
+                </li>
+            </ul>
+            <!-- === Clickable Photo Section === -->
+                <section id="clickphoto">
+                <h2>Research results</h2>
+                <p>Click the image below to enlarge it 👇</p>
+                <img id="myPhoto" src="work_images.jpg" alt="work" width="250">
+            </section>
+            <section id="chartSection">
+                <h2>My Research Chart (billboard.js)</h2>
+                <div id="chart"></div>
+            </section>
+
+        </section>
+
+        <hr>
+
+        <!-- ===== Internship Section ===== -->
+        <section id="internships">
+            <h2>Internship Experiences</h2>
+            <ul>
+                <li>
+                    <strong>Beijing Yunong High Quality Agricultural Products Planting Co., Ltd.</strong><br>
+                    <i>Supply Chain and Logistics Department Intern | Jul – Sept 2024</i><br>
+                    Managed internal supply chain operations, monitored product inflow and outflow, 
+                    and coordinated supplier schedules. Conducted warehouse and cold-chain management, 
+                    optimized product allocation, and performed loss rate and cost analysis to improve 
+                    logistics efficiency.
+                </li>
+                <br>
+                <li>
+                    <strong>China Construction First Group Co., Ltd.</strong><br>
+                    <i>Project Management Intern | Jun - Aug 2023</i><br>
+                    Participated in the life-cycle management of construction projects, conducted cost 
+                    estimation and schedule coordination, and developed automated data scripts to 
+                    improve logistics tracking and project efficiency.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+<!-- ===== Hobbies Section ===== -->
+<section id="hobbies">
+  <h2>Hobbies & Personal Interests</h2>
+  <p>Beyond research, I embrace creativity, rhythm, and balance. Music and sports help me focus, while games challenge my logic and imagination — all of which inspire my research mindset.</p>
+
+  <!-- Bootstrap Alert -->
+  <div class="alert alert-success text-center mt-4" role="alert">
+    “A creative mind performs better when it's also enjoying life outside of academia.”
+  </div>
+
+  <!-- Bootstrap 3-Column Layout -->
+  <div class="container mt-4">
+    <div class="row text-center">
+      <div class="col-md-4 p-3 border bg-light">
+        <h5>🎶 Flute & Drums</h5>
+        <p>Music gives me rhythm, patience, and expression - a balance of structure and creativity.</p>
+      </div>
+      <div class="col-md-4 p-3 border bg-white">
+        <h5>🏊‍♀️ Swimming</h5>
+        <p>Water helps me reset my mind, think clearly, and stay disciplined through routine training.</p>
+      </div>
+      <div class="col-md-4 p-3 border bg-light">
+        <h5>🎮 Gaming</h5>
+        <p>Games sharpen my problem-solving skills and remind me that strategy and creativity can coexist.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <h5 class="mt-4">Work-Life Balance</h5>
+  <div class="progress mb-4">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+         role="progressbar" style="width: 70%">70% Balanced</div>
+  </div>
+
+  <!-- Autoplaying Carousel -->
+  <div id="hobbyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="flute.jpg" class="d-block w-100" alt="Playing Flute">
+      </div>
+      <div class="carousel-item">
+        <img src="swimming.jpg" class="d-block w-100" alt="Swimming">
+      </div>
+      <div class="carousel-item">
+        <img src="gaming.jpg" class="d-block w-100" alt="Gaming">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <table border="1" cellpadding="6">
+                <tr>
+                    <th>Item</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:guoxy092025@163.com">guoxy092025@163.com</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+86-15201537955</td>
+                </tr>
+                <tr>
+                    <td>WeChat</td>
+                    <td>ggneversleep</td>
+                </tr>
+                <tr>
+                    <td>CV</td>
+                    <td><a href="GUO_Xingyue-CV.pdf" target="_blank">Download CV</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+<!-- ===== Web Form Section ===== -->
+<section id="guestbook">
+  <h2>Guestbook</h2>
+  <p>Leave your name and message below 👇</p>
+
+  <!-- 表单部分 -->
+  <form id="messageForm">
+    <label for="nameInput"><strong>Name:</strong></label><br>
+    <input type="text" id="nameInput" placeholder="Your name" required>
+    <br><br>
+
+    <label for="msgInput"><strong>Message:</strong></label><br>
+    <textarea id="msgInput" rows="3" cols="40" placeholder="Write something..." required></textarea>
+    <br><br>
+
+    <!-- 点击按钮调用 addMessage() -->
+    <input type="button" value="Add my Message" onclick="addMessage()">
+  </form>
+
+  <hr>
+
+  <!-- 消息显示区 -->
+  <div id="messageDisplay">
+    <h3>Messages:</h3>
+    <!-- 新消息将会添加在这里 -->
+  </div>
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2025 Guo Xingyue | All rights reserved.</p>
+    </footer>
+    
+    <!-- ✅ Bootstrap JS (含 Carousel，不需要单独引 Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
