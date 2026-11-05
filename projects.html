@@ -143,6 +143,12 @@
     .publication { margin:0 0 23px; }
     .publication:last-child { margin-bottom:0; }
     .publication p { font-size:13px; }
+    .ongoing-project { border-top:1px solid var(--line); padding:18px 0; }
+    .ongoing-project:first-of-type { border-top:0; padding-top:0; }
+    .ongoing-project:last-child { padding-bottom:0; }
+    .ongoing-project h3 { font-family:inherit; font-size:16px; font-weight:500; margin-bottom:9px; }
+    .ongoing-project p { font-size:14px; margin-bottom:9px; }
+    .ongoing-project a { font-size:13px; }
     .back-link { display:inline-block; margin:0 0 30px; font-size:13px; }
     .project-page h2 { font-size:31px; line-height:1.35; margin:0 0 16px; }
     .project-page:focus { outline:none; }
@@ -187,19 +193,27 @@
       
     </aside><main id="main"><article class="project-page" id="ma-communication" aria-labelledby="ma-communication-title" data-project-title="Executive participation in M&amp;A conference calls">
 <a class="back-link" href="index.html#hku">← Back to research experience</a>
-<h2 id="ma-communication-title">Executive participation in M&amp;A conference calls</h2><p class="status">Manuscript in preparation</p>
+<h2 id="ma-communication-title">Executive participation in M&amp;A conference calls</h2><p class="status">Research in progress</p>
 <div class="project-meta"><p>The University of Hong Kong</p><p>Prof. Andy S. Back</p></div>
 <h3>About the project</h3><p>This project examines target executives’ participation in M&amp;A deal announcement calls and its relationship with investor and analyst responses. It distinguishes substantive explanations from symbolic endorsements by examining linguistic alignment, speaking roles, and Q&amp;A participation.</p>
-<h3>My contributions</h3><ul><li>Structured a database of 1,800 call transcripts by speaker identity, executive role, and firm affiliation, and linked call content to transaction, stock-return, and analyst data.</li><li>Constructed measures of linguistic style matching, narrative concentration, and Q&amp;A participation. Combined dictionary-based measures with prompt-based LLM text scoring to construct and validate narrative coherence and executive-participation variables.</li><li>Conducted empirical analyses in Python and Stata, and contributed to hypothesis development, research memos, and manuscript drafts.</li></ul>
-<h3>Methods &amp; tools</h3><p class="methods-note">Python · Stata · Text analysis · Linguistic style matching · LLM-assisted coding</p><h3>Related work</h3><p>Back, A., An, K., &amp; Guo, X. <em>Visible participation, unequal voice: Target executive involvement in M&amp;A conference calls.</em> Manuscript in preparation.</p>
+<h3>My contributions</h3><ul><li>Structured a database of 1,800 call transcripts by speaker identity, executive role, and firm affiliation, and linked call content to transaction, stock-return, and analyst data.</li><li>Constructed measures of linguistic style matching, narrative concentration, and Q&amp;A participation. Combined dictionary-based measures with prompt-based LLM text scoring to construct and validate narrative coherence and executive-participation variables.</li><li>Conducted empirical analyses in Python and Stata, and contributed to hypothesis development, research memos, and project write-ups.</li></ul>
+<h3>Methods &amp; tools</h3><p class="methods-note">Python · Stata · Text analysis · Linguistic style matching · LLM-assisted coding</p>
 <div class="project-footer"><a class="back-link" href="index.html#hku">← Back to research experience</a></div></article>
 <article class="project-page" id="investor-disclosure" aria-labelledby="investor-disclosure-title" data-project-title="Investor disclosure in entrepreneurial financing">
 <a class="back-link" href="index.html#hku">← Back to research experience</a>
 <h2 id="investor-disclosure-title">Investor disclosure in entrepreneurial financing</h2><p class="status">Research in progress</p>
 <div class="project-meta"><p>The University of Hong Kong</p><p>Prof. Andy S. Back</p></div>
 <h3>About the project</h3><p>This project examines how startups disclose their investor relationships in public funding announcements. The research database links PitchBook financing transactions and investor records to disclosures by startups and investment institutions.</p>
-<h3>My contributions</h3><ul><li>Build an original database linking financing events and investor records to public announcements, with attention to source assessment, event matching, and investor-mention coding.</li><li>Design and compare single-agent and multi-agent workflows for source discovery, coding, review, and independent verification.</li><li>Evaluate coding agreement, confidence ratings, and research time against human-coded reference labels. Refine the workflows through case-level error analysis.</li><li>Prototype programmatic agent coordination and workflows that combine scripted automation with AI agents for research data collection.</li></ul>
-<h3>AI-assisted research methods</h3><p>The workflow comparisons are part of this data-collection work. They examine when additional review improves coding judgments and when it perpetuates errors, using manual coding as a reference.</p><h3>Methods &amp; tools</h3><p class="methods-note">PitchBook · Record linkage · Text coding · Python · Single-agent and multi-agent workflows</p><h3>Related work</h3><p><em>Strategic Disclosure of Investor Relationships in Entrepreneurial Financing.</em> Database development and research in progress.</p>
+<h3>My contributions</h3><ul><li>Build an original database linking PitchBook financing events and investor records to public announcements by startups and investment institutions.</li><li>Assess sources, match announcements to financing events, and code investor mentions to support the study of disclosure patterns.</li></ul>
+<h3>Methods &amp; tools</h3><p class="methods-note">PitchBook · Record linkage · Text coding · Research database construction</p>
+<div class="project-footer"><a class="back-link" href="index.html#hku">← Back to research experience</a></div></article>
+<article class="project-page" id="ai-agent-methods" aria-labelledby="ai-agent-methods-title" data-project-title="AI-agent workflows for research with PitchBook data">
+<a class="back-link" href="index.html#hku">← Back to research experience</a>
+<h2 id="ai-agent-methods-title">AI-agent workflows for research with PitchBook data</h2><p class="status">Research in progress</p>
+<div class="project-meta"><p>The University of Hong Kong</p><p>Prof. Andy S. Back</p></div>
+<h3>About the project</h3><p>This methods-focused project explores the use of AI agents in research data collection and validation, using the task of linking PitchBook financing records to public announcements as an application. The work is being developed as a short methodological overview of workflow design, evaluation, and practical limitations.</p>
+<h3>My contributions</h3><ul><li>Design and compare single-agent and multi-agent workflows for source discovery, coding, review, and independent verification.</li><li>Evaluate coding agreement, confidence ratings, and research time against human-coded reference labels. Refine the workflows through case-level error analysis.</li><li>Prototype programmatic agent coordination and workflows that combine scripted automation with AI agents for research data collection.</li></ul>
+<h3>Methodological focus</h3><p>The workflow comparisons examine when additional review improves coding judgments and when it perpetuates errors, using manual coding as a reference.</p><h3>Methods &amp; tools</h3><p class="methods-note">PitchBook · Python · Single-agent and multi-agent workflows · Human-reference validation</p>
 <div class="project-footer"><a class="back-link" href="index.html#hku">← Back to research experience</a></div></article>
 <article class="project-page" id="nih-mobility" aria-labelledby="nih-mobility-title" data-project-title="NIH funding terminations and researcher mobility">
 <a class="back-link" href="index.html#hku">← Back to research experience</a>
@@ -208,14 +222,6 @@
 <h3>About the project</h3><p>This research work tracks researchers’ institutional moves following NIH funding terminations. It involves connecting grant information with evidence about researchers’ institutional affiliations.</p>
 <h3>My contributions</h3><ul><li>Process NIH grant data for the researcher-tracking workflow.</li><li>Develop Python workflows combining web search, Selenium, and LLM-assisted evidence assessment to track institutional moves.</li></ul>
 <h3>Methods &amp; tools</h3><p class="methods-note">Python · NIH grant data · Web search · Selenium · LLM-assisted evidence assessment</p>
-<div class="project-footer"><a class="back-link" href="index.html#hku">← Back to research experience</a></div></article>
-<article class="project-page" id="strategic-alliances" aria-labelledby="strategic-alliances-title" data-project-title="Strategic alliance database">
-<a class="back-link" href="index.html#hku">← Back to research experience</a>
-<h2 id="strategic-alliances-title">Strategic alliance database</h2>
-<div class="project-meta"><p>The University of Hong Kong</p><p>Prof. Andy S. Back</p></div>
-<h3>About the project</h3><p>This work supports the construction of a database for research on strategic alliances and interorganizational relationships.</p>
-<h3>My contributions</h3><ul><li>Help build the strategic alliance database.</li><li>Support database construction and analysis for related research involving firms, investors, executives, and boards.</li></ul>
-<h3>Methods &amp; tools</h3><p class="methods-note">Research database construction · Data preparation</p>
 <div class="project-footer"><a class="back-link" href="index.html#hku">← Back to research experience</a></div></article>
 <article class="project-page" id="trade-policy" aria-labelledby="trade-policy-title" data-project-title="U.S.–Mexico trade and trade policy">
 <a class="back-link" href="index.html#cuhk">← Back to research experience</a>
