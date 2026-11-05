@@ -1,334 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guo Xingyue | Academic Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="billboard.js"></script>
-    <link rel="stylesheet" href="billboard.css">
-</head>
-
-<body>
-    <body onload="setEvent(); initChart();">
-    <!-- ================= HEADER ================= -->
-    <header>
-        <h1>Guo Xingyue</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#internships">Internships</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-
-    <!-- ================= MAIN CONTENT ================= -->
-    <main>
-
-        <!-- ===== About Section ===== -->
-        <section id="about">
-            <div class="about-container">
-                <!-- 左侧：头像 + 基本信息 -->
-                <div class="about-left">
-                    <img src="GUO Xingyue_profile.jpg" alt="Guo Xingyue Photo" class="profile-photo">
-                    <h2>Guo Xingyue</h2>
-                    <h4>郭星玥</h4>
-                    <p><em>MSc in E-Commerce and Logistics Technology</em><br>
-                       The Chinese University of Hong Kong (CUHK)</p>
-                </div>
-
-                <!-- 右侧：详细介绍 -->
-                <div class="about-right">
-                    <p>
-                        I am <strong>Guo Xingyue</strong>, a postgraduate student at 
-                        <strong>The Chinese University of Hong Kong (CUHK)</strong>. 
-                        My research focuses on <b>strategic management</b>, 
-                        <b>social network analysis</b>, and <b>algorithmic decision optimization</b>.
-                    </p>
-
-                    <p>
-                        Since 2025, I have been collaborating with Prof. Andy Back 
-                        at The University of Hong Kong on projects exploring 
-                        executive communication and M&A conference calls. 
-                        This collaboration extends beyond the traditional research assistant role — 
-                        we are co-developing manuscripts that investigate 
-                        executive network effects and information diffusion.
-                    </p>
-
-                    <p>
-                        I also assist a PhD candidate in CUHK's supply chain research group as a 
-                        student helper, contributing to data visualization 
-                        and analysis of large-scale trade datasets, integrating 
-                        quantitative methods with management research.
-                    </p>
-
-                    <p>
-                        My earlier undergraduate research at 
-                        China University of Petroleum (East China) covered 
-                        social network analysis, system dynamics, 
-                        and algorithm optimization. 
-                        I developed ERGM/TERGM models, dynamic simulations, 
-                        and optimization algorithms in Python and MATLAB for 
-                        logistics and resource allocation.
-                    </p>
-
-                    <p>
-                        In conclusion, I aim to understand how information, decisions, 
-                        and relationships spread through executive and corporate networks.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- ===== Education & Interests Section ===== -->
-        <section id="education">
-            <h2>Education & Interests</h2>
-            <div class="edu-container">
-                <div class="edu-left">
-                    <h3>Research Interests</h3>
-                    <ul>
-                        <li>Strategic Management</li>
-                        <li>Social Network Analysis</li>
-                        <li>Executive Behavior and M&A</li>
-                        <li>Algorithm Optimization</li>
-                        <li>System Dynamics</li>
-                    </ul>
-                </div>
-
-                <div class="edu-right">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>
-                            <strong>The Chinese University of Hong Kong (CUHK)</strong><br>
-                            MSc in E-Commerce and Logistics Technology<br>
-                            <i>Aug 2025 - Present</i>
-                        </li>
-                        <li>
-                            <strong>China University of Petroleum (East China)</strong><br>
-                            Bachelor of Management in Engineering Management<br>
-                            <i>Sept 2021 - Jun 2025</i><br>
-                            GPA: 86.7/100 &nbsp;&nbsp;|&nbsp;&nbsp; Ranking: 14/82
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- ===== Research Section ===== -->
-        <section id="research">
-            <h2>Research Experiences</h2>
-            <h3>Research Collaboration, The University of Hong Kong</h3>
-            <p>
-                Collaborating with <strong>Dr. Andy Back</strong> on projects examining 
-                <b>executive behavior, analyst interpretation, and network imitation</b> in M&A contexts. 
-                Responsibilities include dataset construction, text analysis of conference call transcripts, 
-                and empirical modeling of market and organizational responses.
-            </p>
-
-            <h3>Student Helper, CUHK Supply Chain Research Group</h3>
-            <p>
-                Assisting in data visualization and preprocessing of large trade and logistics datasets. 
-                Experience includes data cleaning, exploratory analytics, and preparing 
-                materials for academic presentation and visualization dashboards.
-            </p>
-
-            <h3>Undergraduate Research Projects</h3>
-            <ul>
-                <li>
-                    <strong>Social Network Analysis:</strong> Built spatial association networks 
-                    using ArcGIS, Ucinet, and Gephi.
-                </li>
-                <li>
-                    <strong>System Dynamics:</strong> Conducted dynamic feedback modeling using Vensim.
-                </li>
-                <li>
-                    <strong>Algorithm Optimization:</strong> Applied operations research techniques 
-                    in Python and MATLAB to optimize logistics and resource allocation.
-                </li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <!-- ===== Publications Section ===== -->
-        <section id="publications">
-            <h2>Publications & Working Papers</h2>
-            <p><em>Manuscripts in Preparation:</em></p>
-            <ul>
-                <li>
-                    <strong>Study on the Characteristics and Influencing Factors of the Spatial 
-                    Correlation Network of Carbon Emission Efficiency in China's Marine Fisheries</strong><br>
-                    Establishes a spatial network for carbon emissions in marine fisheries and 
-                    investigates its underlying mechanisms, offering policy insights.
-                </li>
-            </ul>
-            <!-- === Clickable Photo Section === -->
-                <section id="clickphoto">
-                <h2>Research results</h2>
-                <p>Click the image below to enlarge it 👇</p>
-                <img id="myPhoto" src="work_images.jpg" alt="work" width="250">
-            </section>
-            <section id="chartSection">
-                <h2>My Research Chart (billboard.js)</h2>
-                <div id="chart"></div>
-            </section>
-
-        </section>
-
-        <hr>
-
-        <!-- ===== Internship Section ===== -->
-        <section id="internships">
-            <h2>Internship Experiences</h2>
-            <ul>
-                <li>
-                    <strong>Beijing Yunong High Quality Agricultural Products Planting Co., Ltd.</strong><br>
-                    <i>Supply Chain and Logistics Department Intern | Jul – Sept 2024</i><br>
-                    Managed internal supply chain operations, monitored product inflow and outflow, 
-                    and coordinated supplier schedules. Conducted warehouse and cold-chain management, 
-                    optimized product allocation, and performed loss rate and cost analysis to improve 
-                    logistics efficiency.
-                </li>
-                <br>
-                <li>
-                    <strong>China Construction First Group Co., Ltd.</strong><br>
-                    <i>Project Management Intern | Jun - Aug 2023</i><br>
-                    Participated in the life-cycle management of construction projects, conducted cost 
-                    estimation and schedule coordination, and developed automated data scripts to 
-                    improve logistics tracking and project efficiency.
-                </li>
-            </ul>
-        </section>
-
-        <hr>
-<!-- ===== Hobbies Section ===== -->
-<section id="hobbies">
-  <h2>Hobbies & Personal Interests</h2>
-  <p>Beyond research, I embrace creativity, rhythm, and balance. Music and sports help me focus, while games challenge my logic and imagination — all of which inspire my research mindset.</p>
-
-  <!-- Bootstrap Alert -->
-  <div class="alert alert-success text-center mt-4" role="alert">
-    “A creative mind performs better when it's also enjoying life outside of academia.”
-  </div>
-
-  <!-- Bootstrap 3-Column Layout -->
-  <div class="container mt-4">
-    <div class="row text-center">
-      <div class="col-md-4 p-3 border bg-light">
-        <h5>🎶 Flute & Drums</h5>
-        <p>Music gives me rhythm, patience, and expression - a balance of structure and creativity.</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Academic profile of Xingyue Guo: education, research interests, research assistant experience, project directory, publications, and CV."><meta name="theme-color" content="#faf9f6">
+<meta property="og:title" content="Xingyue Guo | Academic profile"><meta property="og:type" content="website">
+<title>Xingyue Guo | Academic profile</title><style>
+    :root { --paper:#faf9f6; --ink:#233b3a; --text:#384442; --muted:#64716d; --accent:#8b583c; --line:#dedfd7; --wash:#eeefe8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:100px; }
+    body { margin:0; background:var(--paper); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; font-size:16px; line-height:1.75; -webkit-font-smoothing:antialiased; }
+    a { color:var(--ink); text-underline-offset:4px; text-decoration-thickness:1px; }
+    a:hover { color:var(--accent); }
+    a:focus-visible, summary:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:2px; }
+    p { margin:0 0 18px; }
+    h1,h2,h3 { color:var(--ink); font-weight:400; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; }
+    h1 { margin:20px 0 2px; font-size:36px; line-height:1.15; letter-spacing:-1px; }
+    h2 { margin:0 0 24px; font-size:30px; line-height:1.25; letter-spacing:-.4px; }
+    h3 { margin:0 0 10px; font-family:Georgia,"Times New Roman",serif; font-size:23px; line-height:1.4; }
+    strong { font-weight:600; }
+    .skip { position:fixed; top:-70px; left:20px; z-index:20; background:var(--ink); color:white; padding:10px 18px; }
+    .skip:focus { top:10px; }
+    .topbar { position:sticky; top:0; z-index:10; background:rgba(250,249,246,.97); border-bottom:1px solid var(--line); }
+    .nav-inner { max-width:1140px; margin:auto; padding:23px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { font-family:Georgia,"Times New Roman",serif; font-size:22px; text-decoration:none; white-space:nowrap; }
+    .brand span { color:var(--accent); }
+    nav { display:flex; flex-wrap:wrap; gap:26px; }
+    nav a { font-size:13px; text-decoration:none; letter-spacing:.02em; }
+    .layout { max-width:1140px; margin:0 auto; padding:62px 32px 0; display:grid; grid-template-columns:245px minmax(0,1fr); gap:76px; align-items:start; }
+    .profile { position:sticky; top:126px; padding-bottom:36px; }
+    .portrait { width:194px; height:215px; object-fit:cover; object-position:50% 39%; display:block; border-radius:3px; background:#fff; }
+    .chinese-name { color:var(--muted); font-size:17px; letter-spacing:.16em; margin:9px 0 22px; }
+    .role { font-size:14px; line-height:1.65; margin-bottom:6px; }
+    .location { font-size:13px; color:var(--muted); margin-bottom:22px; }
+    .cv-button { display:inline-flex; align-items:center; gap:25px; padding:9px 18px; border:1px solid var(--ink); border-radius:2px; text-decoration:none; font-size:13px; font-weight:600; }
+    .cv-button:hover { background:var(--ink); color:var(--paper); }
+    .profile-links { display:flex; gap:20px; margin-top:17px; font-size:13px; }
+    .profile-note { max-width:210px; margin-top:28px; padding-top:21px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; line-height:1.8; }
+    .eyebrow { font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
+    .lead { font-family:Georgia,"Times New Roman",serif; font-size:29px; line-height:1.45; color:var(--ink); letter-spacing:-.35px; margin-bottom:23px; }
+    main { min-width:0; }
+    main section { padding:0 0 42px; margin:0 0 42px; border-bottom:1px solid var(--line); }
+    main section:last-child { margin-bottom:0; }
+    .interests { margin:27px 0 0; padding:19px 22px; background:var(--wash); border-left:2px solid #8e9b8d; }
+    .interests h3 { font-family:inherit; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.14em; margin:0 0 10px; }
+    .interests p { margin:0; font-size:14px; line-height:1.9; }
+    .section-heading { display:flex; align-items:baseline; gap:13px; margin-bottom:26px; }
+    .section-heading h2 { margin:0; }
+    .section-number { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.07em; }
+    .project { margin-bottom:32px; }
+    .project:last-child { margin-bottom:0; }
+    .project + .project { padding-top:27px; border-top:1px solid var(--line); }
+    .status { display:inline-block; color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; margin-bottom:10px; }
+    .authors { font-size:14px; color:var(--muted); margin-bottom:13px; }
+    .project p { font-size:15px; }
+    details { margin-top:12px; }
+    summary { color:var(--ink); font-size:13px; font-weight:600; cursor:pointer; width:fit-content; }
+    details p { margin:12px 0 0; padding-left:15px; border-left:2px solid var(--line); color:var(--muted); }
+    .publication { padding-left:22px; border-left:2px solid var(--accent); }
+    .publication h3 { font-size:22px; }
+    .publication p { font-size:14px; margin-bottom:9px; }
+    .publication .journal { color:var(--ink); }
+    .paper-link { display:inline-block; margin-top:4px; font-size:13px; font-weight:600; }
+    .entry { display:grid; grid-template-columns:104px minmax(0,1fr); gap:20px; margin-bottom:25px; }
+    .entry:last-child { margin-bottom:0; }
+    .entry time,.dates { font-size:12px; color:var(--muted); line-height:1.7; padding-top:3px; }
+    .entry h3 { font-family:inherit; font-size:15px; font-weight:600; line-height:1.5; margin:0 0 5px; }
+    .entry p { font-size:14px; margin:0 0 5px; }
+    .entry .secondary { font-size:13px; color:var(--muted); }
+    .education-entry { margin-bottom:24px; }
+    .education-entry:last-child { margin-bottom:0; }
+    .education-entry h3 { font-family:inherit; font-size:16px; font-weight:600; margin-bottom:3px; }
+    .education-entry p { font-size:14px; margin:0 0 3px; }
+    .education-entry .secondary { color:var(--muted); font-size:13px; }
+    .methods { margin:0; }
+    .methods dt { color:var(--ink); font-size:14px; font-weight:600; margin-top:18px; }
+    .methods dd { margin:4px 0 0; font-size:14px; }
+    .minor-title { font-family:inherit; font-weight:600; font-size:15px; margin:26px 0 8px; }
+    .compact-list { padding-left:18px; font-size:14px; margin:0; }
+    .compact-list li { padding-bottom:4px; }
+    .contact p { font-size:15px; }
+    .contact-email { font-family:Georgia,"Times New Roman",serif; font-size:22px; overflow-wrap:anywhere; }
+    .beyond { margin-top:26px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:13px!important; }
+    footer { max-width:1140px; padding:25px 32px 32px; margin:25px auto 0; display:flex; justify-content:space-between; gap:20px; font-size:11px; color:var(--muted); }
+    @media (min-width:1500px) { .layout { padding-top:74px; } }
+    @media (max-width:900px) { .layout { grid-template-columns:210px minmax(0,1fr); gap:38px; padding-top:40px; } .portrait { width:175px; height:195px; } h1 { font-size:31px; } .lead { font-size:26px; } nav { gap:17px; } }
+    @media (max-width:680px) {
+      html { scroll-padding-top:115px; }
+      .nav-inner { padding:14px 22px; flex-direction:column; align-items:flex-start; gap:9px; }
+      .brand { font-size:20px; }
+      nav { width:100%; justify-content:space-between; gap:10px; flex-wrap:nowrap; } nav a { font-size:12px; }
+      .layout { display:block; padding:30px 22px 0; }
+      .profile { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); gap:0 20px; padding:0 0 28px; margin-bottom:32px; border-bottom:1px solid var(--line); }
+      .portrait { width:110px; height:133px; grid-column:1; grid-row:1 / 5; margin-top:4px; }
+      h1 { font-size:29px; margin:0 0 3px; grid-column:2; }
+      .chinese-name { grid-column:2; margin:0 0 8px; font-size:14px; }
+      .role { grid-column:2; font-size:12px; margin-bottom:4px; }
+      .location { grid-column:2; margin:0; font-size:11px; }
+      .profile-actions { grid-column:1 / -1; margin-top:22px; display:flex; align-items:center; flex-wrap:wrap; gap:18px 25px; }
+      .profile-links { margin:0; }
+      .profile-note { display:none; }
+      .lead { font-size:26px; }
+      body { font-size:15px; }
+      h2 { font-size:28px; } h3 { font-size:22px; }
+      main section { padding-bottom:32px; margin-bottom:32px; }
+      .entry { grid-template-columns:85px minmax(0,1fr); gap:15px; }
+      .contact-email { font-size:20px; }
+      footer { padding:10px 22px 24px; font-size:10px; flex-wrap:wrap; }
+    }
+    @media (max-width:360px) { nav { gap:6px; } nav a { font-size:10px; } .profile { gap:0 14px; grid-template-columns:95px minmax(0,1fr); } .portrait { width:95px; height:120px; } h1 { font-size:26px; } .entry { display:block; } .dates { margin-bottom:5px; } }
+    @media (max-height:850px) { .profile { position:static; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { .topbar,.skip,.profile-actions,footer { display:none; } body { background:white; font-size:11pt; } .layout { display:block; padding:0; } .profile { position:static; border-bottom:1px solid #999; padding-bottom:15px; margin-bottom:20px; } .portrait { float:right; width:95px; height:110px; } .profile-note { display:none; } main section { margin-bottom:20px; padding-bottom:20px; } .project,.entry,.publication { break-inside:avoid; } }
+  
+    .layout { padding-top:45px; }
+    .intro { font-size:16px; }
+    .intro p:last-child { margin-bottom:0; }
+    main section { margin-bottom:34px; padding-bottom:34px; }
+    .section-heading { margin-bottom:22px; }
+    .section-heading h2 { font-size:27px; }
+    .interest-list { margin:0; padding-left:19px; columns:2; column-gap:30px; font-size:14px; }
+    .interest-list li { padding:3px 0; break-inside:avoid; }
+    .appointment { margin-bottom:29px; }
+    .appointment:last-child { margin-bottom:0; }
+    .appointment + .appointment { padding-top:27px; border-top:1px solid var(--line); }
+    .appointment h3 { font-family:inherit; font-size:17px; font-weight:600; margin-bottom:4px; }
+    .supervisor { font-size:14px; margin-bottom:10px; color:var(--muted); }
+    .appointment-roles { display:grid; grid-template-columns:1fr auto; gap:4px 20px; font-size:13px; margin-bottom:16px; }
+    .appointment-roles time { color:var(--muted); text-align:right; }
+    .directory { margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+    .directory li { border-bottom:1px solid var(--line); }
+    .project-link { display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:18px; padding:14px 13px; text-decoration:none; transition:background .15s; }
+    .project-link:hover { background:var(--wash); color:var(--ink); }
+    .project-link .title { font-size:15px; font-weight:500; text-decoration:underline; text-decoration-color:#bac4bc; text-underline-offset:4px; }
+    .project-link .topic { grid-column:1; color:var(--muted); font-size:12px; margin-top:3px; }
+    .project-link .arrow { grid-column:2; grid-row:1 / 3; align-self:center; font-size:20px; color:var(--accent); }
+    .directory-label { font-size:10px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
+    .directory-intro { font-size:14px; color:var(--muted); margin:-8px 0 26px; }
+    .education-entry { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 15px; margin-bottom:23px; }
+    .education-entry h3 { grid-column:1; font-size:15px; }
+    .education-entry p { grid-column:1; }
+    .education-entry time { grid-column:2; grid-row:1 / 4; color:var(--muted); font-size:12px; padding-top:2px; text-align:right; }
+    .publication h3 { font-family:inherit; font-size:16px; font-weight:500; }
+    .publication { margin:0 0 23px; }
+    .publication:last-child { margin-bottom:0; }
+    .publication p { font-size:13px; }
+    .back-link { display:inline-block; margin:0 0 30px; font-size:13px; }
+    .project-page h2 { font-size:31px; line-height:1.35; margin:0 0 16px; }
+    .project-page:focus { outline:none; }
+    .project-meta { font-size:13px; color:var(--muted); border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:30px; }
+    .project-meta p { margin:0 0 4px; }
+    .project-page h3 { font-family:inherit; font-size:16px; font-weight:600; margin:25px 0 12px; }
+    .project-page p,.project-page li { font-size:15px; }
+    .project-page ul { padding-left:19px; margin:0; }
+    .project-page li { padding-bottom:9px; }
+    .project-page .methods-note { padding:16px 20px; background:var(--wash); font-size:13px; }
+    .project-footer { border-top:1px solid var(--line); margin-top:35px; padding-top:20px; }
+    .project-footer .back-link { margin-bottom:10px; }
+    .project-page[hidden] { display:none; }
+    @media (max-width:680px) {
+      .layout { padding-top:28px; }
+      .interest-list { columns:1; }
+      .education-entry { display:block; }
+      .education-entry time { display:block; text-align:left; margin-bottom:5px; }
+      .appointment-roles { grid-template-columns:1fr; gap:0; }
+      .appointment-roles time { text-align:left; margin-bottom:8px; }
+      .project-link { padding:12px 5px; }
+      .project-page h2 { font-size:26px; }
+      .project-view .profile { display:none; }
+    }
+    @media print { .project-link { padding:8px 0; } .back-link { display:none; } .appointment { break-inside:avoid; } }
+</style></head><body id="top" class="home-view"><a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="nav-inner"><a class="brand" href="index.html" aria-label="Xingyue Guo, home">Xingyue Guo<span>.</span></a>
+<nav aria-label="Main navigation"><a href="index.html#about">About</a><a href="index.html#education">Education</a><a href="index.html#experience">Research</a><a href="index.html#publications">Publications</a><a href="index.html#contact">Contact</a></nav></div></header>
+<div class="layout"><aside class="profile" aria-label="Profile and links">
+      <img class="portrait" src="profile.jpg" alt="Portrait of Xingyue Guo" width="194" height="215" fetchpriority="high">
+      <h1>Xingyue Guo</h1>
+      <p class="chinese-name" lang="zh-Hans">郭星玥</p>
+      <p class="role">Research Assistant<br><strong>The University of Hong Kong</strong></p>
+      <p class="location">Hong Kong SAR</p>
+      <div class="profile-actions">
+        <a class="cv-button" href="Xingyue_Guo_CV.pdf" target="_blank" rel="noopener" aria-label="Curriculum vitae (PDF, opens in a new tab)">Curriculum vitae <span aria-hidden="true">↗</span></a>
+        <div class="profile-links">
+          <a href="mailto:xyguo202509@outlook.com">Email</a>
+          <a href="https://github.com/Xingyue0124" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="col-md-4 p-3 border bg-white">
-        <h5>🏊‍♀️ Swimming</h5>
-        <p>Water helps me reset my mind, think clearly, and stay disciplined through routine training.</p>
-      </div>
-      <div class="col-md-4 p-3 border bg-light">
-        <h5>🎮 Gaming</h5>
-        <p>Games sharpen my problem-solving skills and remind me that strategy and creativity can coexist.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Progress Bar -->
-  <h5 class="mt-4">Work-Life Balance</h5>
-  <div class="progress mb-4">
-    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
-         role="progressbar" style="width: 70%">70% Balanced</div>
-  </div>
-
-  <!-- Autoplaying Carousel -->
-  <div id="hobbyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="flute.jpg" class="d-block w-100" alt="Playing Flute">
-      </div>
-      <div class="carousel-item">
-        <img src="swimming.jpg" class="d-block w-100" alt="Swimming">
-      </div>
-      <div class="carousel-item">
-        <img src="gaming.jpg" class="d-block w-100" alt="Gaming">
-      </div>
-    </div>
-  </div>
+      
+    </aside><main id="main">
+<section id="about" class="intro" aria-labelledby="about-title"><div class="section-heading"><h2 id="about-title">About</h2></div>
+<p>I am a full-time Research Assistant at <strong>The University of Hong Kong</strong>, working with <strong>Prof. Andy S. Back</strong>. I joined his research group as a part-time research assistant in September 2025 and began my full-time appointment in July 2026.</p>
+<p>I received my MSc from The Chinese University of Hong Kong and my bachelor’s degree from China University of Petroleum (East China).</p>
 </section>
-
-        <!-- ===== Contact Section ===== -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <table border="1" cellpadding="6">
-                <tr>
-                    <th>Item</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><a href="mailto:guoxy092025@163.com">guoxy092025@163.com</a></td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td>+86-15201537955</td>
-                </tr>
-                <tr>
-                    <td>WeChat</td>
-                    <td>ggneversleep</td>
-                </tr>
-                <tr>
-                    <td>CV</td>
-                    <td><a href="GUO_Xingyue-CV.pdf" target="_blank">Download CV</a></td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <hr>
-<!-- ===== Web Form Section ===== -->
-<section id="guestbook">
-  <h2>Guestbook</h2>
-  <p>Leave your name and message below 👇</p>
-
-  <!-- 表单部分 -->
-  <form id="messageForm">
-    <label for="nameInput"><strong>Name:</strong></label><br>
-    <input type="text" id="nameInput" placeholder="Your name" required>
-    <br><br>
-
-    <label for="msgInput"><strong>Message:</strong></label><br>
-    <textarea id="msgInput" rows="3" cols="40" placeholder="Write something..." required></textarea>
-    <br><br>
-
-    <!-- 点击按钮调用 addMessage() -->
-    <input type="button" value="Add my Message" onclick="addMessage()">
-  </form>
-
-  <hr>
-
-  <!-- 消息显示区 -->
-  <div id="messageDisplay">
-    <h3>Messages:</h3>
-    <!-- 新消息将会添加在这里 -->
-  </div>
+<section id="education" aria-labelledby="education-title"><div class="section-heading"><h2 id="education-title">Education</h2></div>
+<div class="education-entry"><h3>The Chinese University of Hong Kong</h3><time>Aug 2025–Jul 2026</time><p>MSc in E-Commerce and Logistics Technologies</p><p class="secondary">GPA: 3.55/4.0 · MSc Graduate Award, 2026</p></div>
+<div class="education-entry"><h3>China University of Petroleum (East China)</h3><time>Sep 2021–Jun 2025</time><p>Bachelor of Management in Engineering Management</p><p class="secondary">GPA: 86.73/100 · Outstanding Undergraduate Thesis Award, 2025</p></div>
 </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <p>© 2025 Guo Xingyue | All rights reserved.</p>
-    </footer>
-    
-    <!-- ✅ Bootstrap JS (含 Carousel，不需要单独引 Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+<section id="interests" aria-labelledby="interests-title"><div class="section-heading"><h2 id="interests-title">Research interests</h2></div>
+<ul class="interest-list"><li>Interorganizational relationships and networks</li><li>Resource dependence and asymmetry</li><li>Entrepreneurship and platform ecosystems</li><li>Strategic disclosure and audience evaluations</li></ul>
+</section>
+<section id="experience" aria-labelledby="experience-title"><div class="section-heading"><h2 id="experience-title">Research experience &amp; projects</h2></div>
+<p class="directory-intro">Select a project to read about the research and my contributions.</p>
+<article class="appointment" id="hku"><h3>The University of Hong Kong</h3><p class="supervisor">Research Assistant to Prof. Andy S. Back</p>
+<div class="appointment-roles"><span>Full-time Research Assistant</span><time>Jul 2026–present</time><span>Part-time Research Assistant</span><time>Sep 2025–Jul 2026</time></div>
+<p class="directory-label">Projects</p><ul class="directory"><li><a class="project-link" href="projects.html#ma-communication"><span class="title">Executive participation in M&amp;A conference calls</span><span class="topic">Executive communication · Investor and analyst responses</span><span class="arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="projects.html#investor-disclosure"><span class="title">Investor disclosure in entrepreneurial financing</span><span class="topic">Financing announcements · Investor relationships · AI-assisted data collection</span><span class="arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="projects.html#nih-mobility"><span class="title">NIH funding terminations and researcher mobility</span><span class="topic">Funding changes · Institutional moves · Evidence assessment</span><span class="arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="projects.html#strategic-alliances"><span class="title">Strategic alliance database</span><span class="topic">Interfirm relationships · Research database construction</span><span class="arrow" aria-hidden="true">↗</span></a></li></ul></article>
+<article class="appointment" id="cuhk"><h3>The Chinese University of Hong Kong</h3><p class="supervisor">Prof. Jing Wu’s research group</p><div class="appointment-roles"><span>Student Researcher · Part-time</span><time>Sep–Nov 2025</time></div>
+<p class="directory-label">Projects</p><ul class="directory"><li><a class="project-link" href="projects.html#trade-policy"><span class="title">U.S.–Mexico trade and trade policy</span><span class="topic">Trade data · Policy shocks · Research proposal development</span><span class="arrow" aria-hidden="true">↗</span></a></li></ul></article>
+<article class="appointment" id="cufe"><h3>Central University of Finance and Economics</h3><p class="supervisor">Research Assistant to Prof. Jianmei Zhao</p><div class="appointment-roles"><span>Research Assistant · Part-time</span><time>Apr–Oct 2025</time></div>
+<p class="directory-label">Projects</p><ul class="directory"><li><a class="project-link" href="projects.html#social-networks"><span class="title">Social networks and small-business financing</span><span class="topic">Social networks · Access to finance · Intergenerational income mobility</span><span class="arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="projects.html#ecommerce"><span class="title">E-commerce and rural entrepreneurship</span><span class="topic">E-commerce platforms · Rural startups · Panel-data analysis</span><span class="arrow" aria-hidden="true">↗</span></a></li></ul></article>
+<article class="appointment" id="upc"><h3>China University of Petroleum (East China)</h3><p class="supervisor">Research Assistant to Prof. Jiekun Song</p><div class="appointment-roles"><span>Research Assistant · Part-time</span><time>Feb 2024–Jun 2025</time></div>
+<p class="directory-label">Projects</p><ul class="directory"><li><a class="project-link" href="projects.html#marine-fishery"><span class="title">Marine-fishery carbon efficiency and spatial networks</span><span class="topic">Carbon emission efficiency · Spatial networks · Network evolution</span><span class="arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="projects.html#evolutionary-games"><span class="title">Evolutionary games and system dynamics</span><span class="topic">Regional interconnections · Two-party and three-party models</span><span class="arrow" aria-hidden="true">↗</span></a></li></ul></article>
+</section>
+<section id="publications" aria-labelledby="publications-title"><div class="section-heading"><h2 id="publications-title">Publications &amp; manuscripts</h2></div>
+<article class="publication"><span class="status">Published</span><h3>Characteristics and influencing factors of the carbon emission efficiency association network of China’s marine fishery industry</h3><p>Song, J., <strong>Guo, X.</strong>, Ding, Y., &amp; Xiao, H. (2026).</p><p><em>Ocean &amp; Coastal Management</em>, 276, 108143.</p><p><a href="https://doi.org/10.1016/j.ocecoaman.2026.108143" target="_blank" rel="noopener">Article ↗</a> &nbsp;·&nbsp; <a href="projects.html#marine-fishery">Project details</a></p></article>
+<article class="publication"><span class="status">Manuscript in preparation</span><h3>Visible participation, unequal voice: Target executive involvement in M&amp;A conference calls</h3><p>Back, A., An, K., &amp; <strong>Guo, X.</strong></p><p><a href="projects.html#ma-communication">Project details</a></p></article>
+</section>
+<section id="work" aria-labelledby="work-title"><div class="section-heading"><h2 id="work-title">Internship experience</h2></div>
+<div class="entry"><div class="dates">Jul–Sep 2024</div><div><h3>Beijing Yunong High Quality Agricultural Products Planting Co., Ltd.</h3><p>Supply Chain and Logistics Intern</p><p class="secondary">Tracked product inflows and outflows, coordinated suppliers and storage arrangements, and calculated loss rates and economic measures for cold-chain and logistics operations.</p></div></div>
+<div class="entry"><div class="dates">Jun–Aug 2023</div><div><h3>China Construction First Group Co., Ltd.</h3><p>Project Management Intern</p><p class="secondary">Supported project documentation and coordination, quantity takeoffs, unit-price analyses, and monitoring of project progress and quality requirements.</p></div></div>
+</section>
+<section id="training" aria-labelledby="training-title"><div class="section-heading"><h2 id="training-title">Training &amp; skills</h2></div>
+<div class="education-entry"><h3>INSEAD · Online Pre-Doctoral Summer Camp</h3><time>May–Jun 2026</time><p><em>Using AI for Research in Organization Science</em></p><p class="secondary">Research design, text analysis, and LLM-assisted research methods.</p></div>
+<dl class="methods"><dt>Research methods</dt><dd>Panel-data regression, difference-in-differences, event studies, social network analysis (ERGM/TERGM), system dynamics, and robust optimization.</dd><dt>Data and text</dt><dd>Research database construction, record linkage, web scraping, text analysis, and LLM-based coding and multi-agent research workflows.</dd><dt>Software</dt><dd>Python, R, Stata, MATLAB, ArcGIS, Gephi, UCINET, Vensim, JavaScript, HTML, and CSS.</dd><dt>Languages</dt><dd>English (fluent) and Chinese.</dd></dl>
+<h3 class="minor-title">Additional honors</h3><ul class="compact-list"><li>Outstanding Student Award, UPC · 2024</li><li>Academic Excellence Scholarship, UPC · 2024</li><li>Academic Progress Scholarship, UPC · 2023</li></ul>
+</section>
+<section id="contact" class="contact" aria-labelledby="contact-title"><div class="section-heading"><h2 id="contact-title">Contact</h2></div>
+<a class="contact-email" href="mailto:xyguo202509@outlook.com">xyguo202509@outlook.com</a><p style="margin-top:14px"><a href="Xingyue_Guo_CV.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF) ↗</a></p>
+<p class="beyond">Beyond research, I enjoy fencing, tennis, cycling, and playing drums in a band.</p></section>
+</main></div>
+<footer><span>© 2026 Xingyue Guo · Last updated November 2026</span><a href="#top">Back to top ↑</a></footer></body></html>
